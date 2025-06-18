@@ -34,7 +34,7 @@ const Navbar = () => {
       if (!userId || !token) return;
 
       try {
-        const response = await fetch(`http://e-khayetli.runasp.net/api/Users/${userId}`, {
+        const response = await fetch(`https://e-khayetli.runasp.net/api/Users/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
             accept: "*/*",
