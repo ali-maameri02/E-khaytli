@@ -1,0 +1,5 @@
+[
+  { "id": "1", "client": "John Doe", "date": "2025-04-01", "statut": "Terminée" },
+  { "id": "2", "client": "Jane Smith", "date": "2025-04-02", "statut": "En attente" },
+  { "id": "3", "client": "Mike Johnson", "date": "2025-04-03", "statut": "En cours" }
+]
