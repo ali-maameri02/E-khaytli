@@ -74,7 +74,7 @@ function TailorPortfolio() {
       try {
         // Step 1: Fetch tailor with reviews
         const tailorResponse = await fetch(
-          `http://e-khayetli.runasp.net/api/Tailors/${tailorId}/with-reviews`
+          `https://e-khayetli.runasp.net/api/Tailors/${tailorId}/with-reviews`
         );
         const tailorData = await tailorResponse.json();
 
@@ -104,7 +104,7 @@ function TailorPortfolio() {
   
         // Step 2: Fetch portfolio by tailor ID
         const portfolioRes = await fetch(
-          `http://e-khayetli.runasp.net/api/Clients/tailors/${tailorId}/portfolio`
+          `https://e-khayetli.runasp.net/api/Clients/tailors/${tailorId}/portfolio`
         );
 
         const portfolioData = await portfolioRes.json();
@@ -119,7 +119,7 @@ function TailorPortfolio() {
 
         // Step 3: Fetch projects by portfolio ID
         const projectsRes = await fetch(
-          `http://e-khayetli.runasp.net/api/Portfolios/${portfolioId}/with-thumbnail`
+          `https://e-khayetli.runasp.net/api/Portfolios/${portfolioId}/with-thumbnail`
         );
 
         const projectsData = await projectsRes.json();
